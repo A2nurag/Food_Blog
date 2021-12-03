@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +11,41 @@
     <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
     <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="sticky top-0 z-40 color2 sm:block">
         <div class="nav box-border shadow-xl flex sm:place-content-evenly place-content-between">
-            <img src="/images/logo.svg" alt="" class="w-20 h-20 p-2 filter z-50 border-solid border-1 rounded-full shadow-xl drop-shadow-xl m-3 bg-red-300">
+            <img src="images/logo.svg" alt=""
+                class="w-20 h-20 p-2 filter z-50 border-solid border-1 rounded-full shadow-xl drop-shadow-xl m-3 bg-red-300">
             <ul class="nav-list sm:flex items-center font-bold mont lg:text-xl uppercase md:text-md sm:text-sm hidden">
-                <li class="nav-items lg:px-16 md:px-8 sm:px-4 cursor-pointer after:bg-red-400 after:bottom-0 after: height "><a href="#about" class="link"> About</li></a>
-                <li class="nav-items lg:px-16 md:px-8 sm:px-4 cursor-pointer after:bg-red-400 after:bottom-0 after: height "><a href="#recipes" class="link"> Recipes</li></a>
-                <li class="nav-items lg:px-16 md:px-8 sm:px-4 cursor-pointer after:bg-red-400 after:bottom-0 after: height "><a href="#contact" class="link"> Contact Us</li></a>
+                <li
+                    class="nav-items lg:px-16 md:px-8 sm:px-4 cursor-pointer after:bg-red-400 after:bottom-0 after: height ">
+                    <a href="#about" class="link"> About
+                </li></a>
+                <li
+                    class="nav-items lg:px-16 md:px-8 sm:px-4 cursor-pointer after:bg-red-400 after:bottom-0 after: height ">
+                    <a href="#recipes" class="link"> Recipes
+                </li></a>
+                <li
+                    class="nav-items lg:px-16 md:px-8 sm:px-4 cursor-pointer after:bg-red-400 after:bottom-0 after: height ">
+                    <a href="#contact" class="link"> Contact Us
+                </li></a>
             </ul>
             <div class="btns p-1 lg:text-md md:text-sm hidden sm:block">
-                <button class="btn p-2.5 lg:mr-10 mt-3 md:mr-5 sm:mr-2 sm:text-sm lg:text-xl font-bold  text-red-400  border-red-400 hover:bg-red-400 hover:text-gray-100 font-ubu text-lg">Log In</button>
-                <button class="btn p-2.5 lg:mr-7 mt-3 md:mr-3 sm:mr-2  sm:text-sm lg:text-xl font-bold text-red-400  border-red-400 hover:bg-red-400 hover:text-gray-100 font-ubu text-lg">Sign Up</button>
+                <button
+                    class="btn p-2.5 lg:mr-10 mt-3 md:mr-5 sm:mr-2 sm:text-sm lg:text-xl font-bold  text-red-400  border-red-400 hover:bg-red-400 hover:text-gray-100 font-ubu text-lg">Log
+                    In</button>
+                <button
+                    class="btn p-2.5 lg:mr-7 mt-3 md:mr-3 sm:mr-2  sm:text-sm lg:text-xl font-bold text-red-400  border-red-400 hover:bg-red-400 hover:text-gray-100 font-ubu text-lg">Sign
+                    Up</button>
             </div>
             <!-- Mobile Menu Toggle Button -->
             <div class="sm:hidden flex items-center mr-8">
                 <button class="outline-none mobile-menu-button">
-                    <svg class=" w-6 h-6 text-gray-700 hover:text-red-300 " x-show="!showMenu" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class=" w-6 h-6 text-gray-700 hover:text-red-300 " x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor">
                         <path d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
@@ -39,38 +56,46 @@
     <div class="hidden mobile-menu color font-mont text-xl absolute right-0 w-2/5 uppercase">
         <ul class="font-mont text-xl flex flex-col ">
             <li class="active"><a href="index.html"
-                class="block text-lg px-2 py-4 font-mont text-white bg-red-300 font-bold">Home</a></li>
-            <li><a href="#recipes" class="block font-mont text-lg px-2 py-4 font-bold hover:bg-red-300 hover:text-white transition duration-300">Recipes</a></li>
-            <li><a href="#about" class="block font-mont text-lg px-2 py-4 font-bold hover:bg-red-300 hover:text-white transition duration-300">About</a></li>
-            <li><a href="#contact" class="block font-mont text-lg px-2 py-4 font-bold hover:bg-red-300 hover:text-white transition duration-300">Contact Us</a></li>
+                    class="block text-lg px-2 py-4 font-mont text-white bg-red-300 font-bold">Home</a></li>
+            <li><a href="#recipes"
+                    class="block font-mont text-lg px-2 py-4 font-bold hover:bg-red-300 hover:text-white transition duration-300">Recipes</a>
+            </li>
+            <li><a href="#about"
+                    class="block font-mont text-lg px-2 py-4 font-bold hover:bg-red-300 hover:text-white transition duration-300">About</a>
+            </li>
+            <li><a href="#contact"
+                    class="block font-mont text-lg px-2 py-4 font-bold hover:bg-red-300 hover:text-white transition duration-300">Contact
+                    Us</a></li>
         </ul>
     </div>
     <!-- Carousel Creation -->
     <div class="carousel relative w-4/5 my-16 mx-auto hidden sm:block">
         <button class="carousel_button carousel_button--left is-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
         </button>
         <div class="carousel_track-container">
             <ul class="carousel_track">
                 <li class="carousel_slide current-slide">
-                    <img class="carousel-img" src="/images/image01.jpg" alt="">
+                    <img class="carousel-img" src="images/image01.jpg" alt="">
                 </li>
                 <li class="carousel_slide">
-                    <img class="carousel-img" src="/images/image02.jpg" alt="">
+                    <img class="carousel-img" src="images/image02.jpg" alt="">
                 </li>
                 <li class="carousel_slide">
-                    <img class="carousel-img" src="/images/image03.jpg" alt="">
+                    <img class="carousel-img" src="images/image03.jpg" alt="">
                 </li>
             </ul>
         </div>
         <button class="carousel_button carousel_button--right">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
         </button>
-    
+
         <div class="carousel_nav">
             <button class="carousel-indicator current_slide"></button>
             <button class="carousel-indicator mx-4"></button>
@@ -80,13 +105,24 @@
     <!-- About Me Section -->
     <div class="about-me font-mont flex xl:place-content-between xl:relative flex-col xl:flex-row items-center">
         <div class="my-pic p-4 border-4 m-4 border-solid border-black color">
-            <img src="/images/image04.jpg" alt="">
+            <img src="images/image04.jpg" alt="">
         </div>
-        <div class="info p-4 w-4/5 border-4 m-4 border-dashed  border-black rounded-lg xl:absolute xl:right-16 xl:top-7 xl:max-w-lg color">
+        <div
+            class="info p-4 w-4/5 border-4 m-4 border-dashed  border-black rounded-lg xl:absolute xl:right-16 xl:top-7 xl:max-w-lg color">
             <h3 class="text-2xl uppercase font-ubu font-bold ">Hey There!</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem nihil omnis modi deleniti ex fugit aliquam earum dolores nobis, voluptates qui veniam officia tenetur consectetur aperiam ducimus ullam explicabo. Nihil dolorem atque tempore dolorum odio! Deserunt odit dolorum, facilis, quidem culpa consectetur alias fugiat totam delectus eos dicta voluptate!<b></b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet fuga, voluptatum nemo in adipisci corrupti quam aspernatur quasi ipsam! Temporibus sunt nulla delectus atque et adipisci nihil asperiores mollitia possimus, eveniet eligendi ab beatae ut odit eius obcaecati? Optio ducimus non officia dolores deserunt adipisci commodi, tempore beatae nisi veritatis quos excepturi nostrum et officiis impedit exercitationem atque ullam quidem quod doloremque assumenda fugiat veniam blanditiis. At animi consectetur quidem incidunt libero soluta earum? Atque exercitationem quisquam, inventore libero, iusto magnam labore facere, ducimus eius numquam quasi consequatur. Dolore voluptates autem illum molestias vero est in molestiae placeat ullam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem nihil omnis modi
+                deleniti ex fugit aliquam earum dolores nobis, voluptates qui veniam officia tenetur consectetur aperiam
+                ducimus ullam explicabo. Nihil dolorem atque tempore dolorum odio! Deserunt odit dolorum, facilis,
+                quidem culpa consectetur alias fugiat totam delectus eos dicta voluptate!<b></b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet fuga, voluptatum nemo in
+                adipisci corrupti quam aspernatur quasi ipsam! Temporibus sunt nulla delectus atque et adipisci nihil
+                asperiores mollitia possimus, eveniet eligendi ab beatae ut odit eius obcaecati? Optio ducimus non
+                officia dolores deserunt adipisci commodi, tempore beatae nisi veritatis quos excepturi nostrum et
+                officiis impedit exercitationem atque ullam quidem quod doloremque assumenda fugiat veniam blanditiis.
+                At animi consectetur quidem incidunt libero soluta earum? Atque exercitationem quisquam, inventore
+                libero, iusto magnam labore facere, ducimus eius numquam quasi consequatur. Dolore voluptates autem
+                illum molestias vero est in molestiae placeat ullam.
             </p>
         </div>
     </div>
@@ -96,26 +132,35 @@
     </div>
     <div class="recipe-list flex place-content-center flex-col lg:flex-row items-center">
         <div class="recipe flex flex-col items-center">
-            <img src="/images/image05.jpg" alt="" class="image rounded-lg">
+            <img src="images/image05.jpg" alt="" class="image rounded-lg">
             <p class="font-mont p-3 my-6 w-4/5 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga, iusto architecto laborum illo numquam, ullam dolore dignissimos ipsam non asperiores voluptatibus quod odit tenetur, consequuntur ad culpa velit temporibus totam aliquam! Quaerat, ullam magnam repellat ipsam voluptas voluptatum soluta necessitatibus id in pariatur fugiat facilis. Reiciendis neque tempore id.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga, iusto architecto laborum illo
+                numquam, ullam dolore dignissimos ipsam non asperiores voluptatibus quod odit tenetur, consequuntur ad
+                culpa velit temporibus totam aliquam! Quaerat, ullam magnam repellat ipsam voluptas voluptatum soluta
+                necessitatibus id in pariatur fugiat facilis. Reiciendis neque tempore id.
             </p>
         </div>
         <div class="recipe flex flex-col items-center">
-            <img src="/images/image06.jpg" alt="" class="image rounded-lg">
+            <img src="images/image06.jpg" alt="" class="image rounded-lg">
             <p class="font-mont p-3 my-6 w-4/5 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga, iusto architecto laborum illo numquam,
-                ullam dolore dignissimos ipsam non asperiores voluptatibus quod odit tenetur, consequuntur ad culpa velit
-                temporibus totam aliquam! Quaerat, ullam magnam repellat ipsam voluptas voluptatum soluta necessitatibus id in
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga, iusto architecto laborum illo
+                numquam,
+                ullam dolore dignissimos ipsam non asperiores voluptatibus quod odit tenetur, consequuntur ad culpa
+                velit
+                temporibus totam aliquam! Quaerat, ullam magnam repellat ipsam voluptas voluptatum soluta necessitatibus
+                id in
                 pariatur fugiat facilis. Reiciendis neque tempore id.
             </p>
         </div>
         <div class="recipe flex flex-col items-center">
-            <img src="/images/image07.jpg" alt="" class="image rounded-lg">
+            <img src="images/image07.jpg" alt="" class="image rounded-lg">
             <p class="font-mont p-3 my-6 w-4/5 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga, iusto architecto laborum illo numquam,
-                ullam dolore dignissimos ipsam non asperiores voluptatibus quod odit tenetur, consequuntur ad culpa velit
-                temporibus totam aliquam! Quaerat, ullam magnam repellat ipsam voluptas voluptatum soluta necessitatibus id in
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga, iusto architecto laborum illo
+                numquam,
+                ullam dolore dignissimos ipsam non asperiores voluptatibus quod odit tenetur, consequuntur ad culpa
+                velit
+                temporibus totam aliquam! Quaerat, ullam magnam repellat ipsam voluptas voluptatum soluta necessitatibus
+                id in
                 pariatur fugiat facilis. Reiciendis neque tempore id.
             </p>
         </div>
@@ -183,4 +228,5 @@
 
     <script src="/public/index.js"></script>
 </body>
+
 </html>
